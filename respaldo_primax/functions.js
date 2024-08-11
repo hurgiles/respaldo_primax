@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function changeImage() {
         images[currentImageIndex].classList.remove('active1');
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        images[currentImageIndex].classList.add('active');
+        images[currentImageIndex].classList.add('active1');
     }
 
     // Cambiar la imagen cada cierto tiempo
