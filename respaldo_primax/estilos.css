@@ -244,7 +244,7 @@ nav ul li a {
     transition: opacity 1s ease-in-out;
 }
 
-.image-slide.active {
+.image-slide.active1 {
     opacity: 1;
 }
 
@@ -397,7 +397,11 @@ button:hover {
 
 /*Hacer que el boton sea negro cuando este activo*/
 .active {
-    /*background-color: #333333 !important;*/
+    background-color: #333333 !important;
+    color: white;
+}
+.active1 {
+    background-color: none !important;
     color: white;
 }
 
