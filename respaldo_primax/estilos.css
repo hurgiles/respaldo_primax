@@ -400,6 +400,10 @@ button:hover {
     background-color: #333333 !important;
     color: white;
 }
+.active1 {
+    background-color: none !important;
+    color: white;
+}
 
 
 /*Progress bar
