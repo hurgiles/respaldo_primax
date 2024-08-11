@@ -510,7 +510,7 @@ button:hover {
     margin-left: -1px;
 }
 .circle.start1 {
-    left: 0;
+    left: -1px;
     background-color: #F37D2A;
 }
 
