@@ -526,7 +526,7 @@ button:hover {
 .circle.middle2 {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
-    background-color: #149100;
+    background-color: #F37D2A;
 }
 
 .circle.end {
@@ -542,7 +542,7 @@ button:hover {
 }
 .circle.end3 {
     right: 0;
-    background-color: #149100;
+    background-color: #F37D2A;
     margin-right: -1px;
 }
 /* boton instagram */
@@ -832,7 +832,7 @@ button:hover {
     .circle.middle2 {
     left: 50%;
     transform: translateX(-50%);
-    background-color: #149100;
+    background-color: #F37D2A;
     margin-top: 15px;
     }
     .circle.end2 {
@@ -847,7 +847,7 @@ button:hover {
     }
     .circle.end3 {
     right: 0;
-    background-color: #149100;
+    background-color: #F37D2A;
     margin-right: -1px;
     margin-top: 15px;
     }
