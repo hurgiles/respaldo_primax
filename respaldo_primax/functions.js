@@ -134,14 +134,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const changeInterval = 5000; // 5000 milisegundos = 5 segundos
 
     function changeImage() {
-        images[currentImageIndex].classList.remove('active1');
+        images[currentImageIndex].classList.remove('active');
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        images[currentImageIndex].classList.add('active1');
+        images[currentImageIndex].classList.add('active');
     }
 
     // Cambiar la imagen cada cierto tiempo
     setInterval(changeImage, changeInterval);
 
     // Iniciar mostrando la primera imagen
-    images[currentImageIndex].classList.add('active1');
+    images[currentImageIndex].classList.add('active');
 });
