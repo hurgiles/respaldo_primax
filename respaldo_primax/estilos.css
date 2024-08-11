@@ -237,7 +237,7 @@ nav ul li a {
 
 .image-slide {
     position: absolute;
-    top: 0;
+    top: -350px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
