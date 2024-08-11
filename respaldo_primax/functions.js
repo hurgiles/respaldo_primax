@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const changeInterval = 5000; // 5000 milisegundos = 5 segundos
 
     function changeImage() {
-        images[currentImageIndex].classList.remove('active');
+        images[currentImageIndex].classList.remove('active1');
         currentImageIndex = (currentImageIndex + 1) % images.length;
         images[currentImageIndex].classList.add('active');
     }
@@ -143,5 +143,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeImage, changeInterval);
 
     // Iniciar mostrando la primera imagen
-    images[currentImageIndex].classList.add('active');
+    images[currentImageIndex].classList.add('active1');
 });
