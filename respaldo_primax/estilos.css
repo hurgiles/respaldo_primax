@@ -401,7 +401,7 @@ button:hover {
 
 /*Hacer que el boton sea negro cuando este activo*/
 .active {
-    /*background-color: #333333 !important;*/
+    background-color: #333333 !important;
     color: white;
 }
 
