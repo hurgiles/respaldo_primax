@@ -504,7 +504,7 @@ button:hover {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #F37D2A;
     position: absolute;
     top: -5px;
     z-index: 2;
