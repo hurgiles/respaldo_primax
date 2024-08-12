@@ -244,8 +244,10 @@ nav ul li a {
     transition: opacity 1s ease-in-out;
 }
 
-.image-slide.active {
-    opacity: 1;
+.image-slide.active-image {
+    /* Tus estilos específicos para la imagen */
+    opacity: 1; /* Por ejemplo, hacerla visible */
+    background-color: transparent;
 }
 
 #main-section .section-right {
@@ -401,7 +403,7 @@ button:hover {
 
 /*Hacer que el boton sea negro cuando este activo*/
 .active {
-    background-color: #333333 !important;
+    background-color: #333333;
     color: white;
 }
 
