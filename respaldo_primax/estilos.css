@@ -64,10 +64,9 @@ strong {
 }   
 
 #main-header img {
-    margin-right: 10%; /* Ajusta este valor según tus necesidades */
+    margin-right: 5%; /* Ajusta este valor según tus necesidades */
     width: 200px;
     /*height: 150px;*/
-    margin-top: 50px;
 }
 #main-header a {
     color: white;
@@ -254,6 +253,10 @@ nav ul li a {
     /* background-color: #FFFFFF; */
 }
 
+#unique-image{
+    top: -250px;
+}
+
 /*#main-section .section-left img {
     text-align: center;
     display: block;
@@ -358,7 +361,7 @@ button:hover {
 .submit-btn {
     width: 49%;
     padding: 10px 10px;
-    background-color: #ccc;
+    background-color: #91C4E1;
     border: none;
     border-radius: 20px;
     cursor: not-allowed;
@@ -673,7 +676,7 @@ button:hover {
 @media (min-width: 768px) {
     .submit-btn {
         /*padding: 10px 60px;*/
-        background-color: #ccc;
+        background-color: #91C4E1;
         border: none;
         border-radius: 20px;
         cursor: not-allowed;
