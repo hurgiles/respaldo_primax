@@ -64,9 +64,10 @@ strong {
 }   
 
 #main-header img {
-    margin-right: 5%; /* Ajusta este valor según tus necesidades */
+    margin-right: 10%; /* Ajusta este valor según tus necesidades */
     width: 200px;
     /*height: 150px;*/
+    margin-top: 50px;
 }
 #main-header a {
     color: white;
