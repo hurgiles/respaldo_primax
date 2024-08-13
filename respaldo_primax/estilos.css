@@ -759,7 +759,7 @@ button:hover {
     .image-container {
         position: relative;
         margin-left: 0% !important;
-        margin-top: 42%;
+        margin-top: 50%;
     }
     .image-slide {
         display: none; /* Ocultar todas las imágenes por defecto */
