@@ -249,6 +249,12 @@ nav ul li a {
     opacity: 1; /* Por ejemplo, hacerla visible */
     background-color: transparent;
 }
+/*.image-slide {
+    display: block;  Mostrar solo las imágenes pequeñas  
+}
+.small-image {
+    display: none;   Ocultar todas las imágenes por defecto 
+}*/
 
 #main-section .section-right {
     flex: 1;
@@ -554,7 +560,7 @@ button:hover {
 }
 /* boton instagram */
 .instagram-button {
-    background-color: #333333;
+    background-color: #F37D2A;
     color: white;
     padding: 10px 70px;
     border: none;
@@ -645,7 +651,7 @@ button:hover {
     .circle.middle2 {
     left: 50%;
     transform: translateX(-50%);
-    background-color: #149100;
+    background-color: #F37D2A;
     margin-top: 15px;
     }
     .circle.end2 {
@@ -660,7 +666,7 @@ button:hover {
     }
     .circle.end3 {
     right: 0;
-    background-color: #149100;
+    background-color: #F37D2A;
     margin-top: 15px;
     margin-right: -1px;
     }
@@ -746,10 +752,21 @@ button:hover {
     }
 
     #main-section .section-left img {
-        width: 35%;
+        /* width: 35%; */
         height: auto;
+        margin-top: 150px;
     }
-
+    .image-container {
+        position: relative;
+        margin-left: 0% !important;
+        margin-top: 42%;
+    }
+    .image-slide {
+        display: none; /* Ocultar todas las imágenes por defecto */
+    }
+    .small-image {
+        display: block; /* Mostrar solo las imágenes pequeñas */
+    }
     .form-group {
         margin-bottom: 15px;
     }
@@ -811,7 +828,7 @@ button:hover {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #F37D2A;
     position: absolute;
     /*top: -5px;*/
     }
@@ -931,7 +948,7 @@ button:hover {
         margin-top: 0px; 
     }
     .instagram-button {
-        background-color: #333333;
+        background-color: #F37D2A;
         color: white;
         padding: 10px 115px;
     }
@@ -976,6 +993,17 @@ button:hover {
         display: inline-block;
         margin-right: 2.3%;
         }
+    .image-slide {
+        display: none; /* Ocultar todas las imágenes por defecto */
+    }
+    .small-image {
+        display: block; /* Mostrar solo las imágenes pequeñas */
+    }
+    .instagram-button {
+        background-color: #F37D2A;
+        color: white;
+        padding: 10px 80px;
+    }
 }
 @media (min-width: 2560px) {
     .submit-btn {
