@@ -129,19 +129,40 @@ document.addEventListener('DOMContentLoaded', function() {
     form2.addEventListener('input', updateCompleteButtonState);
 
     // Código para cambiar las imágenes cada 5 segundos
-    const images = document.querySelectorAll('.image-slide');
+    const images = document.querySelectorAll('.image-slide:not(.small-image)'); // Imágenes grandes
+    const smallImages = document.querySelectorAll('.small-image'); // Imágenes pequeñas
     let currentImageIndex = 0;
     const changeInterval = 5000; // 5000 milisegundos = 5 segundos
 
     function changeImage() {
-        images[currentImageIndex].classList.remove('active-image');
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        images[currentImageIndex].classList.add('active-image');
+        // Determinar si estamos en una pantalla pequeña
+        const isSmallScreen = window.matchMedia("(max-width: 480px)").matches;
+
+        // Ocultar todas las imágenes
+        images.forEach(img => img.classList.remove('active-image'));
+        smallImages.forEach(img => img.classList.remove('active-image'));
+        
+        if (isSmallScreen) {
+            // Cambiar entre imágenes pequeñas
+            smallImages[currentImageIndex].classList.remove('active-image');
+            currentImageIndex = (currentImageIndex + 1) % smallImages.length;
+            smallImages[currentImageIndex].classList.add('active-image');
+        } else {
+            // Cambiar entre imágenes grandes
+            images[currentImageIndex].classList.remove('active-image');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active-image');
+        }
     }
 
     // Cambiar la imagen cada cierto tiempo
     setInterval(changeImage, changeInterval);
 
-    // Iniciar mostrando la primera imagen
-    images[currentImageIndex].classList.add('active-image');
+    // Iniciar mostrando la primera imagen adecuada
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        smallImages[currentImageIndex].classList.add('active-image');
+    } else {
+        images[currentImageIndex].classList.add('active-image');
+    }
+
 });
