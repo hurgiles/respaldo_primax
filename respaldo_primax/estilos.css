@@ -64,9 +64,10 @@ strong {
 }   
 
 #main-header img {
-    margin-right: 5%; /* Ajusta este valor según tus necesidades */
+    margin-right: 10%;
     width: 200px;
-    /*height: 150px;*/
+    /* height: 150px; */
+    margin-top: 50px;
 }
 #main-header a {
     color: white;
@@ -232,7 +233,7 @@ nav ul li a {
 
 .image-container {
     position: relative;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
 .image-slide {
@@ -262,7 +263,8 @@ nav ul li a {
 }
 
 #unique-image{
-    top: -250px;
+    top: -275px;
+    width: 600px;
 }
 
 /*#main-section .section-left img {
@@ -570,6 +572,11 @@ button:hover {
     text-decoration: none; /* Esto quita el subrayado del enlace */
     display: inline-block; /* Esto hace que el enlace se comporte como un botón */
 }
+button:hover {
+    color: white;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transition-delay: 0.1s;  /*Retraso antes de comenzar la transición */
+}
 .check-imagen {
     width: 80px;
     height: 80px;
@@ -714,7 +721,9 @@ button:hover {
         justify-content: center;
     }
     #main-header img {
-        margin-left: 0px;
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 30%;
     }
 
     #logo-header {
@@ -754,12 +763,12 @@ button:hover {
     #main-section .section-left img {
         /* width: 35%; */
         height: auto;
-        margin-top: 150px;
+        margin-top: 140px;
     }
     .image-container {
         position: relative;
         margin-left: 0% !important;
-        margin-top: 50%;
+        margin-top: 60%;
     }
     .image-slide {
         display: none; /* Ocultar todas las imágenes por defecto */
