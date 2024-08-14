@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             var instagramUser = instagramField.value;
             instagramUser = capitalizeFirstLetter(instagramUser);
-            confirmationMessage.textContent = instagramUser;
+            confirmationMessage.textContent = instagramUser + ",";
             form2.style.display = 'none';
             confirmation.style.display = 'block';
             // Actualizar la barra de progreso al 100%
