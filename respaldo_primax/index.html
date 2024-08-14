@@ -97,6 +97,14 @@
             .mt-0 {
                 margin-right: -50px;
             }
+            input[type=checkbox], input[type=radio] {
+                box-sizing: border-box;
+                padding: 0;
+                margin-top: -15px;
+                width: 15px;
+                border-radius: 3px;
+                border: 2px solid white;
+            }
         </style>
     </head>
     <body class="inicio">
@@ -115,7 +123,7 @@
             <section id="main-section">
                 <div class="section-left">
                     <div class="image-container">
-                        <img src="./img/imgU.svg" alt="First Image" class="image-slide active-image">
+                        <img src="./img/imgU.svg" alt="First Image" id="first-image" class="image-slide active-image">
                         <img src="./img/duplicate_img.svg" alt="Promotional Image" id="unique-image" class="image-slide">
                         <!--<img src="./img/prueba1.svg" alt="Third Image" class="image-slide">-->
                         <!-- Imágenes para pantallas pequeñas -->
@@ -232,6 +240,20 @@
                                 
                                     </div>
                                 </div>
+                                <div class="row mb-3 form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked"  required />
+                                        <label class="form-check-label text-left" for="flexTCheckChecked" style="font-size: 11px;font-weight: 700;padding: 5px 0px;margin-left: 20px;">
+                                        He leído y acepto los <a href="./Terminos_y_Condiciones_promo_mama.pdf" target="_blank">Términos y Condiciones</a> de la promoción
+                                        </label> 
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" name="checkbox2" type="checkbox" value="" id="flexTCheckChecked"  required />
+                                        <label class="form-check-label text-left" for="flexPPCheckChecked" style="font-size: 11px;font-weight: 700;padding: 5px 0px;margin-left: 20px;">
+                                        He leído y acepto los <a href="./Tratamiento_de_Uso_de_Datos_-_GirosMama__.pdf" target="_blank">Términos y Condiciones</a> para el tratamiento de mis datos.
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <button id="back" class="submit-btn">Regresar</button>
                             <button id="complete" class="submit-btn">Completar registro</button>
@@ -254,14 +276,13 @@
                                     </div>
                                 </div>
                                 <h2 style="color: #FFFFFF;">
-                                    ¡listo <span id="confirmationMessage" style="font-weight: bold;">[Nombre de usuario]</span> ya estás registrado!
+                                    ¡Listo <span id="confirmationMessage" style="font-weight: bold;">[Nombre de usuario]</span> ya estás registrado!
                                 </h2>
                                 <p style="font-size:16px; color: #FFFFFF;">
                                     <strong>¿Quieres más oportunidades para participar?</strong>
                                     <br>Síguenos en nuestra cuenta de Instagram
                                 </p>
-                                <a href="https://www.instagram.com/primaxec/" class="instagram-button" target="_blank">@primaxec
-                            </a>
+                                <a href="https://www.instagram.com/primaxec/" class="instagram-button" target="_blank" >@primaxec</a>
                                 <!--<p style="font-size: 16px;"><b>Revisa tu bandeja de entrada de correos</b>, da clic en el botón de <b>verificar</b> que encontrarás en el correo para que dirección de correo electrónico quede verificada y tu registro quedará registrado.</p>-->
                             </div>
                         </div>
