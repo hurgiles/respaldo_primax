@@ -115,6 +115,15 @@ nav ul li a {
     text-decoration: none;
 }
 
+a {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
+}
+
+.custom-checkbox {
+    border-radius: 3px;
+    border: 2px solid white; /* Borde blanco */
+}
 
 /*Pie de Página*/
 #main-footer {
@@ -266,6 +275,11 @@ nav ul li a {
 #unique-image{
     top: -275px;
     width: 600px;
+}
+
+#first-image{
+    width: 700px;
+    margin-top: -75px;
 }
 
 /*#main-section .section-left img {
@@ -575,7 +589,7 @@ button:hover {
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
-    text-decoration: none; /* Esto quita el subrayado del enlace */
+    text-decoration: none !important; /* Esto quita el subrayado del enlace */
     display: inline-block; /* Esto hace que el enlace se comporte como un botón */
 }
 button:hover {
