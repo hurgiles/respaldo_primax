@@ -580,6 +580,13 @@ button:hover {
     background-color: #F37D2A;
     margin-right: -1px;
 }
+/* agradecimiento */
+.agradecimiento{
+
+}
+.thanks{
+
+}
 /* boton instagram */
 .instagram-button {
     background-color: #F37D2A;
@@ -723,7 +730,15 @@ button:hover {
         width: 400px !important;  /*Ajusta el tamaño total de la barra de progreso aquí*/ 
         margin: 20px auto;  /*Centra la barra de progreso horizontalmente*/ 
     }
-
+    .agradecimiento{
+        margin-left: 0px;
+    }
+    .thanks{
+        margin-left: 0px;
+    }
+    .instagram-button{
+        margin-left: 0px;
+    }
 }
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -955,6 +970,7 @@ button:hover {
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
         margin-right: 12.5%;
+        text-decoration: none !important;
     }
     .label {
         width: 20px;
@@ -980,6 +996,9 @@ button:hover {
         background-color: #F37D2A;
         color: white;
         padding: 10px 115px;
+    }
+    .agradecimiento{
+        margin-left: -20px;
     }
 }
 @media only screen and (min-width: 1440px) {
@@ -1014,6 +1033,16 @@ button:hover {
     .submit-btn {
         /* width: 49.5%; */
     }
+    .agradecimiento{
+        margin-left: 125px;
+    }
+    .thanks{
+        margin-left: 125px;
+    }
+    .instagram-button{
+        margin-left: 125px;
+    }
+
 }
 @media only screen and (max-width: 480px) {
     .submit-btn{
@@ -1032,6 +1061,9 @@ button:hover {
         background-color: #F37D2A;
         color: white;
         padding: 10px 80px;
+    }
+    .agradecimiento{
+        margin-left: -15px;
     }
 }
 @media (min-width: 2560px) {
